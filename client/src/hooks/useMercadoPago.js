@@ -14,7 +14,7 @@ export default function useMercadoPago() {
         if (MercadoPago) {
             const mp = new MercadoPago(import.meta.env.VITE_PUBLIC_KEY_MP);
             const cardForm = mp.cardForm({
-                amount: "100.5",
+                amount: "15000",
                 autoMount: true,
                 form: formConfig,
                 callbacks: {
